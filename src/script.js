@@ -13,13 +13,6 @@ let timerId;
 let remainSeconds;
 let hour, min, sec = 0;
 
-// const getInputTime = () => {
-// 	const hour = Number(inputHour.value) || 0;
-// 	const min = Number(inputMin.value) || 0;
-// 	const sec = Number(inputSec.value) || 0;
-// 	return hour * 3600 + min * 60 + sec;
-// }
-
 const getInputTime = () => {
 	const hour = Number(inputHour.value);
 	const min = Number(inputMin.value);
@@ -33,7 +26,7 @@ const getDisplayTime = () => {
 
 const alramOn = () => {
 	const myAudio = new Audio();
-	myAudio.src = "alram.wav";
+	myAudio.src = "./src/alram.wav";
 	myAudio.play();
 }
 
